@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>메뉴 추천 - 기분 선택</title>
+
+    <!-- 반응형 대응 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 공통 스타일 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page-wrapper">
+    <div class="card">
+
+        <h2 class="page-title">지금 기분은 어느 정도인가요?</h2>
+        <p class="page-subtitle">기분에 딱 맞는 음식을 추천해줄게요 😆</p>
+
+        <div class="mood-gauge-wrapper">
+            <div class="mood-gauge-label">Mood Gauge (25% ~ 100%)</div>
+
+            <div class="mood-gauge">
+                <button type="button" class="mood-segment" data-mood="25">25%</button>
+                <button type="button" class="mood-segment" data-mood="50">50%</button>
+                <button type="button" class="mood-segment" data-mood="75">75%</button>
+                <button type="button" class="mood-segment" data-mood="100">100%</button>
+            </div>
+        </div>
+
+        <div class="card-footer-right">
+            <button class="btn btn-primary" data-role="mood-submit">
+                메뉴 추천 받기
+            </button>
+        </div>
+
+    </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

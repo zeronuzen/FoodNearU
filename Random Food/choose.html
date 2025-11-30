@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>메뉴 추천 - 음식 선택</title>
+
+    <!-- 반응형 대응 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 공통 스타일 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page-wrapper">
+    <div class="card">
+
+        <h2 class="page-title">어떤 종류의 음식을 먹고 싶나요?</h2>
+        <p class="page-subtitle">가장 먹고 싶은 음식 종류를 하나 골라 주세요.</p>
+
+        <div class="food-grid">
+            <button class="food-btn" data-cuisine="korean">한식</button>
+            <button class="food-btn" data-cuisine="western">양식</button>
+            <button class="food-btn" data-cuisine="japanese">일식</button>
+            <button class="food-btn" data-cuisine="chinese">중식</button>
+        </div>
+
+        <p class="helper-text">
+            선택하면 다음 기분 선택 단계로 이동해요.
+        </p>
+
+    </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>메뉴 추천 - 결과</title>
+
+    <!-- 반응형 대응 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 공통 스타일 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page-wrapper">
+    <div class="card">
+
+        <h2 class="page-title">오늘의 추천 메뉴!</h2>
+        <p class="page-subtitle">
+            음식 종류 선택과 기분을 바탕으로, 오늘의 메뉴를 추천해봤어요!
+        </p>
+
+        <!-- 결과 영역 -->
+        <div class="result-main">
+            <div class="result-image-wrapper">
+                <img
+                    src=""
+                    alt="추천된 메뉴 이미지"
+                    class="result-image"
+                    data-role="result-image"
+                >
+            </div>
+
+            <div class="result-text">
+                <h3 class="result-name" data-role="result-name">
+                    추천 메뉴 이름
+                </h3>
+                <p class="result-desc" data-role="result-desc">
+                    추천 메뉴에 대한 설명이 여기에 들어갑니다.
+                </p>
+            </div>
+        </div>
+
+        <!-- 버튼 2개를 옆으로 배치 -->
+        <div class="result-btn-row">
+            <button class="btn btn-secondary" data-role="restart-btn">
+                처음으로 돌아가기
+            </button>
+            <button class="btn btn-primary" data-role="restaurant-btn">
+                관련 맛집 추천 받기
+            </button>
+        </div>
+
+    </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

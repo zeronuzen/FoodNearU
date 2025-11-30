@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>메뉴 추천 - 관련 맛집 추천</title>
+
+    <!-- 반응형 대응 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 공통 스타일 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page-wrapper">
+    <div class="card">
+
+        <h2 class="page-title">관련 맛집 추천</h2>
+        <p class="page-subtitle">
+            오늘 추천된 메뉴를 파는 학교 주변 맛집이에요!
+        </p>
+
+        <p class="helper-text">
+            추천 메뉴: <span data-role="selected-menu-name">-</span>
+        </p>
+
+        <ul class="restaurant-list" data-role="restaurant-list">
+            <!-- JS에서 맛집 목록 자동 생성 -->
+        </ul>
+
+        <!-- 버튼 두 개 가로 배치 -->
+        <div class="restaurant-btn-row">
+            <button class="btn btn-outline" data-role="restaurant-back-result">
+                결과 화면 다시 보기
+            </button>
+            <button class="btn btn-primary" data-role="restaurant-restart">
+                처음으로 돌아가기
+            </button>
+        </div>
+
+    </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
